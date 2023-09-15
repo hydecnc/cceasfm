@@ -35,7 +35,7 @@
 	>
 	<div class="text-7xl">ACTIVITES</div>
 
-	<div class="grid grid-cols-3 w-4/5 gap-5">
+	<div class="grid grid-cols-1 w-4/5 gap-5 lg:grid-cols-3">
 		{#await promise then querySnapshot}
 			{#each querySnapshot.docs as activity, i}
 				<a class="card p-4 card-hover flex flex-col" href={`/activities/${id[i]}`}>
