@@ -1,5 +1,6 @@
 import { initializeApp } from 'firebase/app';
 import { getFirestore } from 'firebase/firestore';
+import { getStorage } from 'firebase/storage';
 import { browserSessionPersistence, getAuth, setPersistence } from 'firebase/auth';
 
 export const firebaseConfig = {
@@ -22,4 +23,7 @@ const db = getFirestore(app);
 const auth = getAuth();
 setPersistence(auth, browserSessionPersistence);
 
-export { app, db, auth };
+// Initialize Cloud Storage and get a reference to the service
+const storage = getStorage(app);
+
+export { app, db, auth, storage };
