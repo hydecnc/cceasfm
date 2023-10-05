@@ -1,5 +1,5 @@
 # Tentative CCE Website (V2) created by Hyde
-This is a personal project that I have created in order to make the current CCE website more asthetically pleasing, while features such as ability for authenticated users to add events in a gui.
+This is a personal project that I have created in order to make the current CCE website more asthetically pleasing, with future plans to add features such as ability for authenticated users to add events in a gui.
 
 # create-svelte
 
